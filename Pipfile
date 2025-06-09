@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+snowflake-snowpark-python = "*"
+streamlit = "1.35.0"
+requests = "*"
+jupyterlab = "*"
+streamlit-extras = "*"
+[dev-packages]
+
+[requires]
+python_version = "3.11"
