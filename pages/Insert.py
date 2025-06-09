@@ -241,7 +241,10 @@ if 'data' in st.session_state:
                                     df['sourceCodeSets'] = df['sourceCodeSets'].apply(lambda x: x[0])
                                     df['targetCodeSets'] = df['targetCodeSets'].apply(lambda x: x[0])
 
+                                    #df['targetCodeSets'] = 'Placeholder'
+
                                     df_flattened = pd.concat([df, pd.json_normalize(df.sourceCodeSets), pd.json_normalize(df.targetCodeSets)], axis=1)
+                                    
 
                                     collibra_to_snowflake = {
                                         "crosswalkName": "REFDATA_CROSSWALK_NAME",
